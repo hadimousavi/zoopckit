@@ -1,0 +1,61 @@
+/*!
+ * A Modular Front-end Framework for developing fast and powerful web and mobile interfaces
+ * Copyright 1395-96 Jalali HadiMousavi - haddi.ir - zoopckit.ir
+ * Download Latest Version on (http://zoopckit.ir)
+ * فریم ورک زوپسی کیت یک سیستم کاملا آزاد می باشد که برای طراحی سایت های پارسی با تایپوگرافی و فونت های فارسی و ایرانی طراحی گردیده
+ */
+
+
+
+// Core variables and mixins
+@import "variables";
+@import "zopmix";
+@import "customs";
+
+// Reset and dependencies
+@import "normalize";
+@import "print";
+@import "fonts";
+
+
+
+// Core CSS
+@import "reset";
+@import "typography";
+@import "image-responsive";
+@import "digitalbox";
+@import "grid";
+@import "tr-table";
+@import "forms-system";
+@import "btns";
+
+
+// System core Components
+@import "animations";
+@import "dropdown";
+@import "groupbtns";
+@import "groups-input";
+@import "custom-forms";
+@import "nav";
+@import "navbars";
+@import "cards";
+@import "breadcrumbs";
+@import "paginations";
+@import "badges";
+@import "jumbotrons";
+@import "alerts";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "responsive-embed";
+@import "close";
+
+
+// Components w/ JavaScript
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+
+// Utility classes
+@import "utilities";

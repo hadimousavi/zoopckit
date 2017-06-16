@@ -1,0 +1,76 @@
+// Zoopckit Grid System Bass
+//
+// Includes relevant variables and mixins for the flexbox grid
+// system, as well as the generated predefined classes (e.g., `.col-sm-4`).
+
+//
+// Box sizing, responsive, and more
+//
+
+@at-root {
+  @-ms-viewport { width: device-width; }
+}
+
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+//Setting for Grid Breakpoint
+$grid-breakpoints: (
+           xs: 0,
+           sm: 576px,
+           md: 768px,
+           lg: 992px,
+           xl: 1200px
+) !default;
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints);
+
+
+// Grid containers maximum with
+$container-max-widths: (
+        sm: 33.75rem,
+        md: 45rem,
+        lg: 60rem,
+        xl: 696.3rem
+)  !default;
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+
+// specify and grid columns number
+$grid-columns:               12 !default;
+$grid-gutter-width-base:     1.875rem !default;
+$grid-gutter-widths: (
+        xs : $grid-gutter-width-base,
+        mob: $grid-gutter-width-base,
+        tab: $grid-gutter-width-base,
+        lg : $grid-gutter-width-base,
+        vl : $grid-gutter-width-base
+) !default;
+
+
+
+
+
+
+// Import zoopckit variables
+
+@import "variables";
+
+//mixins for zoopckit grid
+@import "mixins/clearfix";
+@import "mixins/breaks";
+@import "mixins/grid-framework";
+@import "mixins/grids";
+
+
+
+@import "grid-bass";
